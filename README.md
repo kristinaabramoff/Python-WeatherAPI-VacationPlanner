@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c6a20580-e8b4-4bdf-bf05-dada19564b79)# Python API Challenge: Weather Analysis & Vacation Planning
+# Python API Challenge: Weather Analysis & Vacation Planning
 
 ## Background
 This project aims to explore weather patterns by answering a fundamental question: **"What is the weather like as we approach the equator?"** Using Python, APIs, and JSON data, we analyze how weather attributes like temperature, humidity, cloudiness, and wind speed vary with latitude.
@@ -21,13 +21,13 @@ In **WeatherPy**, we use the `citipy` library and OpenWeatherMap API to gather w
   
 - **Latitude vs. Cloudiness**
   
-![Fig1](output_data/Fig2\3.png)
+![Fig1](output_data/Fig3.png)
 
 - **Latitude vs. Wind Speed**
 - 
   ![Fig1](output_data/Fig4.png)
 
-We also compute linear regression for both the Northern and Southern Hemispheres to gain deeper insights into these relationships.
+We also compute linear regression for both the Northern and Southern Hemispheres to gain deeper insights into these relationships (within WeatherPy.ipynb)
 
 ### Key Deliverables:
 - Scatter plots for weather variables vs. latitude
@@ -55,22 +55,13 @@ In **VacationPy**, we utilize the weather data from Part 1 to plan vacations bas
 
 To run this project locally and generate the same analyses and visualizations, follow these steps:
 
-### Prerequisites
-1. Install Python 3.x.
-2. Set up a virtual environment (optional, but recommended).
-3. Install the following libraries:
-   - `pandas`
-   - `numpy`
-   - `matplotlib`
-   - `scipy`
-   - `requests`
-   - `citipy`
-   - `geoViews`
-   - `Geoapify`
+
 
 ### How to use
 
 
-Clone the new repository to your computer.
+Clone the repository to your local machine.
 
-The files called WeatherPy.ipynb and VacationPy.ipynb contain the codes for the weather and vacation components.
+The project consists of two main components:
+- **WeatherPy.ipynb**: Contains the code for collecting and analyzing weather data.
+- **VacationPy.ipynb**: Contains the code for planning vacation destinations based on weather conditions.
