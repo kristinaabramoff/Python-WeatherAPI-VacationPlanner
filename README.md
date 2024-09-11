@@ -1,4 +1,4 @@
-# Python API Challenge: Weather Analysis & Vacation Planning
+![image](https://github.com/user-attachments/assets/c6a20580-e8b4-4bdf-bf05-dada19564b79)# Python API Challenge: Weather Analysis & Vacation Planning
 
 ## Background
 This project aims to explore weather patterns by answering a fundamental question: **"What is the weather like as we approach the equator?"** Using Python, APIs, and JSON data, we analyze how weather attributes like temperature, humidity, cloudiness, and wind speed vary with latitude.
@@ -16,9 +16,16 @@ The project is divided into two main parts:
 
 In **WeatherPy**, we use the `citipy` library and OpenWeatherMap API to gather weather data for over 500 cities worldwide. The objective is to visualize the relationships between weather attributes and latitude through various plots:
 - **Latitude vs. Temperature**
-- **Latitude vs. Humidity**
+  
+![Fig1](output_data/Fig2.png)
+  
 - **Latitude vs. Cloudiness**
+  
+![Fig1](output_data/Fig2\3.png)
+
 - **Latitude vs. Wind Speed**
+- 
+  ![Fig1](output_data/Fig4.png)
 
 We also compute linear regression for both the Northern and Southern Hemispheres to gain deeper insights into these relationships.
 
@@ -61,8 +68,9 @@ To run this project locally and generate the same analyses and visualizations, f
    - `geoViews`
    - `Geoapify`
 
-### Steps
+### How to use
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/python-api-challenge.git
+
+Clone the new repository to your computer.
+
+The files called WeatherPy.ipynb and VacationPy.ipynb contain the codes for the weather and vacation components.
