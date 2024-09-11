@@ -42,7 +42,7 @@ In **VacationPy**, we utilize the weather data from Part 1 to plan vacations bas
 
 ## Map Example
 
-![Map Example](output_data/sample_Map)
+![Map Example](output_data/sample_Map.png)
 
 ## How to Use
 
