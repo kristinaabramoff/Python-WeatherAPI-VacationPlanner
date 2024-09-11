@@ -1,16 +1,68 @@
-# Python API Challenge README
+# Python API Challenge: Weather Analysis & Vacation Planning
 
 ## Background
-The analysis aims to assess how weather attributes vary with latitude and determine suitable vacation destinations based on specific weather conditions using API calls.
+This project aims to explore weather patterns by answering a fundamental question: **"What is the weather like as we approach the equator?"** Using Python, APIs, and JSON data, we analyze how weather attributes like temperature, humidity, cloudiness, and wind speed vary with latitude.
 
 ## Overview
-In this assignment, we created a new repository named python-api-challenge and added two main Jupyter notebooks: WeatherPy.ipynb and VacationPy.ipynb. These notebooks are pivotal in visualizing weather data and planning future vacations based on weather conditions.
+The project is divided into two main parts:
+1. **WeatherPy**: Visualizing weather conditions across 500+ cities based on their latitude.
+2. **VacationPy**: Recommending vacation destinations based on weather preferences and nearby accommodations.
+
+### Repository Contents
+- **WeatherPy.ipynb**: Script for weather data collection and analysis.
+- **VacationPy.ipynb**: Script for vacation planning based on weather conditions.
 
 ## Part 1: WeatherPy
-In WeatherPy, we utilized the citipy Python library and the OpenWeatherMap API to gather weather data for over 500 cities. We then created scatter plots to illustrate the relationships between weather variables (Temperature, Humidity, Cloudiness, Wind Speed) and latitude. Additionally, we computed linear regression for each relationship to gain deeper insights into how weather attributes change with latitude.
+
+In **WeatherPy**, we use the `citipy` library and OpenWeatherMap API to gather weather data for over 500 cities worldwide. The objective is to visualize the relationships between weather attributes and latitude through various plots:
+- **Latitude vs. Temperature**
+- **Latitude vs. Humidity**
+- **Latitude vs. Cloudiness**
+- **Latitude vs. Wind Speed**
+
+We also compute linear regression for both the Northern and Southern Hemispheres to gain deeper insights into these relationships.
+
+### Key Deliverables:
+- Scatter plots for weather variables vs. latitude
+- Linear regression models for both hemispheres
+- Insights into how weather changes with proximity to the equator
 
 ## Part 2: VacationPy
-VacationPy involved using weather data to plan future vacations. Leveraging Jupyter notebooks, the geoViews Python library, and the Geoapify API, we visualized cities on a map, with each point sized according to humidity. We narrowed down the dataset to find cities with ideal weather conditions and used the Geoapify API to identify nearby hotels for each city based on specific weather conditions, enriching the map with this information.
 
-## Conclusion
-This project has honed our skills in Python programming, API integration, data visualization, and problem-solving. It's a testament to our growing proficiency in leveraging data to answer real-world questions and plan personalized travel experiences. 
+In **VacationPy**, we utilize the weather data from Part 1 to plan vacations based on specific weather preferences. Using the Geoapify API, we find hotels near cities with ideal weather conditions.
+
+### Steps:
+1. **City Map**: Visualize cities with markers sized according to their humidity levels.
+2. **Ideal Weather Filter**: Narrow down cities to those with desirable weather conditions (e.g., temperatures between 21°C-27°C, low wind speeds, and zero cloudiness).
+3. **Hotel Search**: Use the Geoapify API to find hotels within 10,000 meters of selected cities and enrich the map with this information.
+
+### Key Deliverables:
+- Interactive map displaying cities based on weather conditions
+- Hotel recommendations displayed with hover information (hotel name and country)
+
+## Map Example
+
+![Map Example](output_data/sample_Map)
+
+## How to Use
+
+To run this project locally and generate the same analyses and visualizations, follow these steps:
+
+### Prerequisites
+1. Install Python 3.x.
+2. Set up a virtual environment (optional, but recommended).
+3. Install the following libraries:
+   - `pandas`
+   - `numpy`
+   - `matplotlib`
+   - `scipy`
+   - `requests`
+   - `citipy`
+   - `geoViews`
+   - `Geoapify`
+
+### Steps
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/python-api-challenge.git
